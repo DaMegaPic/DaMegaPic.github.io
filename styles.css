@@ -2,17 +2,26 @@ body {
     background:#728EA6;
     font-family:Arial, Helvetica, sans-serif;
 }
-.assignment{
+.assignments{
     display:flex;
+    flex-wrap:wrap;
+}
+.assignment{
+    width:30%;
     padding:10px;
     margin:10px;
     background:#6368BF;
-    border-radius:4px;
+    border-radius:3px;
+}
+h2{
+    text-align:center;
 }
 .assignment img {
     width:200px;
     margin:10px;
     border:2px solid #591C1C;
+    display:block;
+    margin:auto;
 }
 
 .assignment img:hover {
