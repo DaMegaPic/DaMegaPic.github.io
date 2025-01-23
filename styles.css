@@ -1,23 +1,31 @@
 /* Structure */
 body {
-    background:mediumseagreen;
+    background:#546EA0;
     font-family:sans-serif;
+}
+#content {
+    background:#75686F;
+    width: 30%;
+    padding: 1px 10px;
+    margin:auto;
+    border-radius: 5px;
 }
 
 /* Navigation */
 #assignment_nav a {
     text-decoration:none;
-    background:#447359;
+    color:#282833;
+    background:#455251;
     padding:1px;
     border-radius: 2px;
 }
 #assignment_nav a:hover{
-    background:#5E423F;
+    background:#888888;
 }
 
 /* Images */
 img{
-    border: 5px solid #447359;
+    border: 5px solid #2A3333;
     border-radius: 3px;
 }
 
@@ -27,18 +35,18 @@ table{
 }
 th,
 td{
-  border: #5E423F;
+  border: #20B3AB;
   padding: 5px;
 }
 
 /* Typography */
 h1{
     font-style:oblique;
-    color:#a14037;
+    color:#282833;
 }
 h2{
-    color:#6b2b25;
+    color:#282833;
 }
 strong{
-    color:#5E423F;
+    color:#75473B;
 }

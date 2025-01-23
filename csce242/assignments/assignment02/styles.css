@@ -1,0 +1,50 @@
+/* Structure */
+Body{
+    background-image:url(images/windows_xp_bliss-wide.jpg);
+}
+div{
+    background:#14E3B3;
+    width:80%;
+    margin:auto;
+    padding: 1px 10px;
+    border-radius:5px;
+}
+
+/* Navigation */
+#nav_buttons a{
+text-decoration: none;
+color: magenta;
+background:black;
+padding:3px;
+border-radius: 4px;
+}
+#nav_buttons a:hover{
+    background:#888888;
+}
+
+/* Images */
+img {
+    border: 5px solid #0FA985;
+    border-radius: 3px;
+}
+
+/* Tables */
+table{
+    border-collapse:collapse;
+    background:#0F67A6;
+}
+th,
+td{
+    border: 1px solid;
+    padding:5px;
+}
+th{
+    background:magenta;
+}
+
+/* Typography */
+em{
+    font:bolder;
+    color:brown;
+    font-size:larger;
+}
