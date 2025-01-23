@@ -1,0 +1,41 @@
+/* Structure */
+body {
+    background:mediumseagreen;
+    font-family:sans-serif;
+}
+
+/* Navigation */
+a {
+    text-decoration:none;
+    background:#447359;
+    padding:1px;
+    border-radius: 2px;
+}
+a:hover{
+    background:#5E423F;
+}
+
+/* Images */
+img{
+    border: 5px solid #447359;
+    border-radius: 3px;
+}
+
+/* Tables */
+table{
+    border-collapse: collapse;
+}
+th,
+td{
+  border: #5E423F;
+  padding: 5px;
+}
+
+/* Typography */
+h1{
+    font-style:oblique;
+    color:#a14037;
+}
+h2{
+    color:#6b2b25;
+}
