@@ -5,13 +5,13 @@ body {
 }
 
 /* Navigation */
-a {
+#assignment_nav a {
     text-decoration:none;
     background:#447359;
     padding:1px;
     border-radius: 2px;
 }
-a:hover{
+#assignment_nav a:hover{
     background:#5E423F;
 }
 
@@ -38,4 +38,7 @@ h1{
 }
 h2{
     color:#6b2b25;
+}
+strong{
+    color:#5E423F;
 }
