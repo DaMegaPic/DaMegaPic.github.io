@@ -7,21 +7,20 @@
     width:85%;
     margin:auto;
 }
-#low-blocks {
+.low-blocks {
     background-color: lightgray;
     text-align: center;
     flex-direction: column;
 }
 aside {
     background-color: salmon;
-    justify-content: space-between;
 }
 .block,
 aside {
     display: flex;
     flex-direction: column;
     width:100%;
-    height:100%;
+    padding-bottom: 5%
 }
 /* Vertical Flex Layout */
 .section {
@@ -43,7 +42,7 @@ aside {
     text-align: center;
     gap:10px;
 }
-#low-blocks {
+.low-blocks {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -110,7 +109,7 @@ body {
         align-items: center;
         text-align: left;
     }
-    #low-blocks {
+    .low-blocks {
         flex-direction: row;
         flex:1;
     }
