@@ -6,7 +6,7 @@ body {
 
 #content {
     background:white;
-    width:70%;
+    width:85%;
     margin:auto; /* center */
     border-radius:5px;
     box-shadow: 10px 10px lightblue;
@@ -32,6 +32,25 @@ main {
 .idea-img {
     padding:5px;
     text-align: center;
+}
+.idea-img:nth-child( even ){
+    padding-left:10px;
+}
+.idea-img:nth-child( odd ) {
+    padding-right:10px;
+}
+
+.gallery {
+    background: #FFB58A;
+}
+.links {
+    background:#CDECEF;
+}
+
+.tile,
+.node {
+    text-align: center;
+    padding:5px;
 }
 
 /* Navigation */
@@ -76,5 +95,24 @@ footer p {
     }
     #main-nav li:not(:last-child) {
         border-right: 1 px solid white;
+    }
+
+    .gallery {
+        flex-wrap:wrap;
+        justify-content: space-between;
+    }
+
+    .one {
+        flex:1;
+    }
+    .two {
+        flex:2;
+    }
+    .three {
+        flex:3;
+    }
+
+    .node {
+        flex-basis:33%;
     }
 }
