@@ -15,6 +15,8 @@ body {
 header, footer {
     background:#2B91AD;
     color:white;
+    position:relative;
+    padding:20px 0;
 }
 
 main {
@@ -32,6 +34,12 @@ main {
 .idea-img {
     padding:5px;
     text-align: center;
+    position:relative;
+}
+.idea-img p {
+    padding:5px;
+    background:#2B91AD;
+    color:white;
 }
 .idea-img:nth-child( even ){
     padding-left:10px;
@@ -53,27 +61,80 @@ main {
     padding:5px;
 }
 
+header {
+    position:fixed; /* Fixed Nav Bar for Mobile */
+    width: 85%;     /* Pretty ugly, work on this */
+}
+/* Animations */
+#animation-fun {
+    background:#a0ccda;
+    padding:20px;
+    height:200px;
+    position:relative;
+}
+
+#ball {
+    height:30px;
+    width:30px;
+    background:white;
+    border-radius:50px;
+    animation-name: fun;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fun {
+    0% {background-color: red;}
+    20% {background-color: orange;}
+    40% {background-color: yellow;}
+    60% {background-color: green;}
+    80% {background-color: blue;}
+    100% {background-color: indigo;}
+}
+
+/* Playing with positioning */
+#main-logo {
+    position:absolute;
+    left:50px;
+}
+
 /* Navigation */
-#main-nav ul {
+#sub-nav {
+    position:absolute;
+    top:0;
+    right:5px;
+}
+
+#main-nav ul, #sub-nav ul {
     padding-left:0;
 }
 
-#main-nav li {
+#main-nav li, #sub-nav li {
     list-style-type: none;  /* remove the bullets */
-    background:#FFB58A;
     text-align: center;
     border-bottom:1px solid white;
 }
 
-#main-nav a {
+#main-nav li {
+    background:#FFB58A;
+}
+
+#main-nav a, #sub-nav a {
     color:white;
     text-decoration: none;  /* remove the underlines */
     border-bottom:1px solid transparent;
 }
 
+#main-nav a:hover, #sub-nav a:hover {
+    border-bottom:1px solid white;
+}
+
 #main-nav a:hover {
     color:crimson;
-    border-bottom:1px solid white;
+}
+
+#sub-nav li {
+    margin: 0 5px;
 }
 
 /* Typography */
@@ -114,5 +175,11 @@ footer p {
 
     .node {
         flex-basis:33%;
+    }
+
+    .idea-img p {
+        position:absolute;
+        padding:5px;
+        bottom:0;
     }
 }
