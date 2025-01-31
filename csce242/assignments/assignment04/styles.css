@@ -7,6 +7,7 @@ header {
     margin:0;
     padding: 0;
     position: fixed;
+    top: 0;
     width: 100%;
     padding-bottom:20px;
 }
@@ -14,11 +15,18 @@ h2 {
     padding:8px 20%;
     background:#78040c;
     color:white;
+    margin-top:80px;
+}
+#picture-caption {
+    background:#ECECEC;
+    padding: 20px 0px 20px 10px;
+    border-left:5px solid #78040c;
+    width:97.7%;
 }
 
 
 /* Navigation */
-#top-nav ul{
+/*#top-nav ul{
     display: flex;
     flex-direction:row;
     justify-content: flex-end;
@@ -32,10 +40,18 @@ h2 {
     color:white;
     font-size: 12px;
     margin-left:5px;
+}*/
+#top-nav ul {
+    opacity:0.0;
+    display:none;
 }
-a {
+li a{
     text-decoration: none;
     color:white;
+}
+#picture-caption a {
+    color:#78040c;
+    text-decoration: none;
 }
 a:hover {
     background:red;
@@ -43,32 +59,85 @@ a:hover {
 
 /* Images */
 #main-logo {
-    left:20.55%;
-    top:1%;
-    bottom:1%;
-    position:relative;
     float:left;
+    padding-top:10px;
+    padding-left: 10px;
 }
 #search-bar {
     padding-left: 65%;
     position: relative;
     padding-top:20px;
+    opacity: 0;
 }
-#caption-picture {
+#big-picture {
     display: block;
     margin-left:auto;
     margin-right:auto;
-    width: 60%;
+    width: 95%;
+}
+#big-picture img {
+    width: 100%;
 }
 
 /* Typography */
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
+h3 {
+    font-size: x-large;
+    letter-spacing: xx-small;
+}
 
 /* Larger Screen */
 @media only screen and (min-width: 768px) { 
+    /* Structure */
     header {
         position:unset;
+    }
+    #picture-caption {
+        position:absolute;
+        bottom:50px;
+        left:25px;
+        width:30%;
+        background-color: white;
+    }
+
+    /* Navigation */
+    #top-nav ul{
+        display: flex;
+        flex-direction:row;
+        justify-content: flex-end;
+        padding-right:20%;
+        padding-top:8px;
+        opacity: 1;
+    }
+    #top-nav li{
+        list-style-type: none;
+        flex-direction: row ;
+        padding-left: 4px;
+        color:white;
+        font-size: 12px;
+        margin-left:5px;
+    }
+    h2 {
+        margin-top:unset;
+    }
+
+    /* Images */
+    #main-logo {
+        left:20.55%;
+        top:1%;
+        bottom:1%;
+        top:1%;
+        position:relative;
+    }
+    #big-picture {
+        position:relative;
+        text-align:center;
+        padding-top:20px;
+        width:60%;
+    }
+    #search-bar {
+        opacity: 1;
     }
 }
