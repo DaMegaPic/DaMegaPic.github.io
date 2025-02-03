@@ -27,6 +27,10 @@ h2 {
     padding:10px;
     font-size:larger;
 }
+#node-grid{
+    display:flex;
+    flex:wrap;
+}
 
 /* Navigation */
 #top-nav ul {
@@ -96,6 +100,15 @@ h3 {
     font-size: x-large;
     letter-spacing: xx-small;
 }
+h4 a{
+    color:#78040c;
+    text-decoration: none;
+}
+h5 {
+    font-size:large;
+    color:#78040c;
+}
+
 /* Larger Screen */
 @media only screen and (min-width: 768px) { 
     /* Structure */
@@ -123,6 +136,15 @@ h3 {
     }
     #inner-box {
         flex:4;
+    }
+    #node-grid {
+        display:flex;
+        flex-direction: column;
+    }
+    #row {
+        display:flex;
+        flex-direction: row;
+        gap:30px;
     }
 
     /* Navigation */
