@@ -1,6 +1,11 @@
 /* Structure */
+:root{
+    --main-background-color:#CDECEF;
+    --primary-color:#2B91AD;
+    --gallery-color:#FFB58A;
+}
 body {
-    background:#CDECEF;
+    background:var(--main-background-color);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -38,18 +43,19 @@ main {
 }
 .idea-img p {
     padding:5px;
-    background:#2B91AD;
+    background:var(--primary-color);
     color:white;
 }
 .idea-img:nth-child( even ){
     padding-left:10px;
+    background:var(--main-background-color);
 }
 .idea-img:nth-child( odd ) {
     padding-right:10px;
 }
 
 .gallery {
-    background: #FFB58A;
+    background:var(--gallery-color);
 }
 .links {
     background:#CDECEF;
@@ -62,14 +68,14 @@ main {
 }
 
 header {
-    position:fixed; /* Fixed Nav Bar for Mobile */
-    width: 85%;     /* Pretty ugly, work on this */
+    /* position:fixed; Fixed Nav Bar for Mobile */     /* Pretty ugly, work on this */
+    
 }
 /* Animations */
 #animation-fun {
     background:#a0ccda;
     padding:20px;
-    height:200px;
+    height:300px;
     position:relative;
 }
 
@@ -79,17 +85,26 @@ header {
     background:white;
     border-radius:50px;
     animation-name: fun;
+    position:relative;
     animation-duration: 5s;
     animation-iteration-count: infinite;
 }
 
 @keyframes fun {
-    0% {background-color: red;}
+    0% {background-color: red;
+    top:0;
+    left:0;
+    }
+
     20% {background-color: orange;}
     40% {background-color: yellow;}
-    60% {background-color: green;}
+    60% {background-color: green;
+    left:100px;
+    top:200px;}
     80% {background-color: blue;}
-    100% {background-color: indigo;}
+    100% {background-color: indigo;
+    top:0px;
+    left:0;}
 }
 
 /* Playing with positioning */
@@ -116,7 +131,7 @@ header {
 }
 
 #main-nav li {
-    background:#FFB58A;
+    background:var(--gallery-color);
 }
 
 #main-nav a, #sub-nav a {
@@ -144,6 +159,9 @@ header h1 {
 
 footer p {
     text-align:center;
+}
+.sad {
+    color:purple;
 }
 
 /* Larger screens */
