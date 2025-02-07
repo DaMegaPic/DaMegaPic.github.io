@@ -1,0 +1,53 @@
+/* Structure */
+body {
+    background:lightgray;
+}
+header{
+    text-align: center;
+    width: 100%;
+}
+main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:20%;
+}
+.column{
+    background:bisque;
+    border: teal solid 1px;
+    padding:20px 50px 200px; 
+    flex:1
+}
+.column:not(:first-child){
+    text-align: center;
+}
+#star{
+    font-size:100px;
+    color:yellow;
+}
+footer{
+    color:teal;
+    text-align: center;
+}
+
+/* Typography */
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    color:teal;
+}
+h2 {
+    color:salmon;
+}
+h3 {
+    color:teal;
+    text-align: center;
+}
+
+/* Larger Screens */
+@media only screen and (min-width: 768px) { 
+    main{
+        flex-direction: row;
+    }
+}
