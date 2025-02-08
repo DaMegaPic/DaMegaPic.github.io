@@ -1,0 +1,27 @@
+/* General */
+* {
+    margin:0;
+}
+
+
+
+
+/* Header */
+#flex-header {
+    display:flex;
+    flex-direction: row;
+    position:relative;
+    padding:10px;
+}
+#flex-header #centered {
+    align-self: center;
+    align-content: center;
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%);
+}
+hr {
+    border:none;
+    height:2px;
+    background-color: #333;
+}
