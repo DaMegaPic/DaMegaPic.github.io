@@ -4,7 +4,9 @@
 }
 body {
     padding-top: 180px;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 /* Header */
 header {
     position:fixed;
@@ -51,8 +53,40 @@ hr {
 }
 #main-nav ul li {
     margin:0 15px;
+    padding:3px 6px;
 }
-#main-nav ul li a {
+#main-nav > li {
+    position:relative;
+}
+#main-nav a {
     text-decoration: none;
     color:#333;
+    display:block;
+}
+.highlight-nav {
+    background-color: lightblue;
+    border-bottom:2px solid blue;
+    border-radius: 5px;
+}
+
+/* Image Cells */
+#flex-nodes {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+}
+#flex-nodes:not(:first-child) {
+    padding-top:50px;
+}
+.node {
+    text-align: center;
+}
+
+/* Larger Resolutions */
+@media only screen and (min-width: 768px) {
+    #flex-nodes {
+        flex-direction: row;
+    }
 }
