@@ -71,6 +71,13 @@ header {
     /* position:fixed; Fixed Nav Bar for Mobile */     /* Pretty ugly, work on this */
     
 }
+.columns {
+    display:flex;
+    flex-direction: row;
+}
+.columns section {
+    flex:1;
+}
 /* Animations */
 #animation-fun {
     background:#a0ccda;
@@ -114,6 +121,12 @@ header {
 }
 
 /* Navigation */
+#toggle-nav div {
+    width:25px;
+    height:2px;
+    background-color:var(--gallery-color);
+    margin:6px 0;
+}
 #sub-nav {
     position:absolute;
     top:0;
@@ -161,9 +174,20 @@ footer p {
     text-align:center;
 }
 .sad {
-    color:purple;
+    color:blue;
 }
-
+.happy {
+    color:pink;
+}
+.display-none {
+    display: none;
+}
+.hide-small {
+    display:none;
+}
+.columns section:nth-child(even) {
+    background:var(--main-background-color);
+}
 /* Larger screens */
 @media only screen and (min-width: 768px) { 
     .columns {
@@ -199,5 +223,11 @@ footer p {
         position:absolute;
         padding:5px;
         bottom:0;
+    }
+    #toggle-nav {
+        display:none;
+    }
+    .hide-small {
+        display:flex;
     }
 }
