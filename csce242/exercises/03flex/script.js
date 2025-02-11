@@ -38,6 +38,23 @@ document.getElementById("feeling").onkeyup = (event) => {
     document.getElementById("feeling-output").innerHTML = 
     "You are feeling " + event.currentTarget.value;
 }
+document.getElementById("btn-choose-color").onclick = () => {
+    const color = document.getElementById("txt-color").value.toLowerCase().trim();
+    let mood = "Happy";
+
+    if(color == "blue"){
+        mood = "grumpy";
+    }
+    else if(color == "yellow"){
+        mood = "mellow";
+    }
+    else {
+        mood = "undefined";
+    }
+
+    document.getElementById("color-message").innerHTML =
+    `You chose ${color}. You are feeling ${mood}`;
+}
 
 //toggling the nav
 document.getElementById("toggle-nav").onclick = () => {
