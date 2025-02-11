@@ -50,6 +50,7 @@ hr {
     display:flex;
     list-style: none;
     padding:0;
+    flex-direction: column;
 }
 #main-nav ul li {
     margin:0 15px;
@@ -67,6 +68,16 @@ hr {
     background-color: lightblue;
     border-bottom:2px solid blue;
     border-radius: 5px;
+}
+#toggle-nav div {
+    width:25px;
+    height:2px;
+    background-color:blue;
+    margin:6px 0;
+}
+
+.hide-small {
+    display:none;
 }
 
 /* Image Cells */
@@ -88,5 +99,11 @@ hr {
 @media only screen and (min-width: 768px) {
     #flex-nodes {
         flex-direction: row;
+    }
+    #main-nav ul {
+        flex-direction: row;
+    }
+    .hide-small {
+        display:flex;
     }
 }
