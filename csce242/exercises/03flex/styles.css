@@ -86,15 +86,24 @@ header {
     position:relative;
 }
 
-#ball {
+#ball-area {
+    position:relative;
+    height:200px;
+}
+
+#ball, #circle {
     height:30px;
     width:30px;
-    background:white;
+    background:brown;
     border-radius:50px;
-    animation-name: fun;
     position:relative;
+    left:50px;
+}
+
+#ball {
     animation-duration: 5s;
     animation-iteration-count: infinite;
+    animation-name: fun;
 }
 
 @keyframes fun {
