@@ -183,7 +183,7 @@ footer p {
     display: none;
 }
 .hide-small {
-    display:none;
+    display:none !important;
 }
 .columns section:nth-child(even) {
     background:var(--main-background-color);
@@ -227,7 +227,7 @@ footer p {
     #toggle-nav {
         display:none;
     }
-    .hide-small {
-        display:flex;
+    #nav-items {
+        display:flex !important;
     }
 }

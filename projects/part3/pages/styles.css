@@ -50,6 +50,7 @@ hr {
     display:flex;
     list-style: none;
     padding:0;
+    flex-direction: column;
 }
 #main-nav ul li {
     margin:0 15px;
@@ -67,6 +68,16 @@ hr {
     background-color: lightblue;
     border-bottom:2px solid blue;
     border-radius: 5px;
+}
+#toggle-nav div {
+    width:25px;
+    height:2px;
+    background-color:blue;
+    margin:6px 0;
+}
+
+.hide-small {
+    display:none !important;
 }
 
 /* About Us */
@@ -164,6 +175,15 @@ h3{
         flex-direction: row;
     }
     #reviews {
+        flex-direction: row;
+    }
+    .hide-small {
+        display:flex !important;
+    }
+    #toggle-nav {
+        display:none;
+    }
+    #main-nav ul {
         flex-direction: row;
     }
 }

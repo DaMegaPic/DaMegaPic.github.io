@@ -77,7 +77,7 @@ hr {
 }
 
 .hide-small {
-    display:none;
+    display:none !important;
 }
 
 /* Image Cells */
@@ -104,6 +104,9 @@ hr {
         flex-direction: row;
     }
     .hide-small {
-        display:flex;
+        display:flex !important;
+    }
+    #toggle-nav {
+        display:none;
     }
 }
