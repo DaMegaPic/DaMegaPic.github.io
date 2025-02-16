@@ -133,7 +133,7 @@ h3{
     display:flex;
     flex:4;
     flex-direction: column;
-    gap:10px;
+    gap:20px;
     flex-wrap:wrap;
 }
 #review-creator {
@@ -155,7 +155,18 @@ h3{
     gap:20px;
 }
 
-/* Image Cells */
+/* Gallery Stuff */
+#gallery-wrapper {
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+}
+#node-wrapper {
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    text-align: center;
+}
 #flex-nodes {
     display:flex;
     flex-direction: column;
@@ -163,16 +174,17 @@ h3{
     align-items: center;
     gap:50px;
 }
-#flex-nodes:not(:first-child) {
-    padding-top:50px;
-}
 .node {
     text-align: center;
 }
 
 /* Larger Resolutions */
 @media only screen and (min-width: 768px) {
+    /* Gallery Stuff */
     #flex-nodes {
+        flex-direction: row;
+    }
+    #gallery-wrapper {
         flex-direction: row;
     }
     /* About */
