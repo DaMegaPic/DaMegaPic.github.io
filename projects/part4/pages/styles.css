@@ -131,15 +131,15 @@ h3{
 /* Reviews */
 #reviews-container {
     display:flex;
-    padding-left:13%;
-    padding-right:5%;
+    padding-left:11%;
+    padding-right:10%;
     flex-direction: column;
 }
 #reviews {
     display:flex;
     flex:4;
     flex-direction: column;
-    gap:20px;
+    gap:40px;
     flex-wrap:wrap;
 }
 #review-creator {
@@ -167,10 +167,14 @@ h3{
     flex-direction: column;
     gap:20px;
 }
+#big-img {
+    width: 1000px;
+    height: 1000px;
+}
 #node-wrapper {
     display:flex;
     flex-direction: column;
-    gap:10px;
+    gap:50px;
     text-align: center;
 }
 #flex-nodes {
