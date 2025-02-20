@@ -24,11 +24,30 @@ document.getElementById("btn-display").onclick = () => {
     }
 }
 
+let count = 0;
+let updateCount;
+
 document.getElementById("btn-count").onclick = (event) => {
+
+    //start count
     if (event.currentTarget.innerHTML == "Start") {
         event.currentTarget.innerHTML = "Stop";
+
+        updateCount = setInterval(()=>{
+            count++;
+            document.getElementById("count-display").innerHTML = count;
+        },1);
     }
+    //stop count
     else if (event.currentTarget.innerHTML == "Stop") {
         event.currentTarget.innerHTML = "Start";
+
+        clearInterval(updateCount);
     }
+}
+document.getElementById("btn-reset").onclick = () => {
+    clearInterval(updateCount);
+    count = 0;
+    document.getElementById("count-display").innerHTML = "";
+    document.getElementById("btn-count").innerHTML = "Start";
 }
