@@ -51,3 +51,25 @@ document.getElementById("btn-reset").onclick = () => {
     document.getElementById("count-display").innerHTML = "";
     document.getElementById("btn-count").innerHTML = "Start";
 }
+
+//toys array
+document.getElementById("btn-show-toys").onclick = (event) => {
+    const toys = ["ball", "skipping rope", "doll", "mini car", "elmo"];
+    
+    event.currentTarget.disabled = true;
+
+    //looooooooooooooooooooooooop
+    /*for(let i = 0; i < toys.length; i++) {
+        console.log(toys[i]);
+    }*/
+    //pretty loop
+    const ul = document.createElement("ul");
+    document.getElementById("display-toys").append(ul);
+
+    toys.forEach((toy, i)=>{
+        const li = document.createElement("li");
+        ul.append(li);
+        li.innerHTML = `${i+1}. ${toy}`;
+        
+    });
+}
