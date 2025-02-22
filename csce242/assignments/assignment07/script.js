@@ -21,7 +21,7 @@ function drawLadder() {
     ladder.style.display = "block";
     ladder.innerHTML = "";
 
-    for (let i = 0; i <= totalSteps+1; i++) {
+    for (let i = 0; i <= totalSteps+3; i++) {
         let rung = document.createElement("div");
         rung.classList.add("rung");
         rung.style.bottom = i * stepHeight + "px";
@@ -40,7 +40,7 @@ function startClimbing() {
     if (climbingInterval) return;
 
     climbingInterval = setInterval(() => {
-        if (currentStep < totalSteps) {
+        if (currentStep < totalSteps+3) {
             currentStep++;
             stickman.style.bottom = currentStep * stepHeight + "px";
             currentImageIndex = 1 - currentImageIndex;

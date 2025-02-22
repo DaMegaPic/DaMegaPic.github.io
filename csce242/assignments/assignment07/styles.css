@@ -1,39 +1,53 @@
 body {
     text-align: center;
     font-family: Arial, sans-serif;
+    background: #87CEEB;
+    margin:0;
+    padding:0;
 }
 
-.container {
+.ladder-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 button {
     margin: 10px;
-    padding: 10px;
+    padding: 12px 20px;
     font-size: 16px;
     cursor: pointer;
+    border:none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #45a049; /* Pretty Buttons */
 }
 
 #ladder {
     position: relative;
-    width: 200px;
-    height: 400px;
+    width: 150px;
+    height: 500px;
     border-left: 5px solid brown;
     border-right: 5px solid brown;
     margin-top: 20px;
     display: none;
-    margin-left: auto;
-    margin-right: auto;
+    border-radius: 10px;
+    padding:10px;
 }
 
 .rung {
-    width: 100%;
+    width: 80%;
     height: 5px;
     background-color: brown;
     position: absolute;
+    left:50%;
+    transform: translateX(-50%);
 }
 
 #stickman {
@@ -43,4 +57,14 @@ button {
     left: 50%;
     transform: translateX(-50%);
     transition: bottom 0.5s ease-in-out;
+}
+
+header h1 {
+    font-size: 28px;
+    color: #333;
+}
+
+header h2 {
+    font-size: 20px;
+    color: #666;
 }
