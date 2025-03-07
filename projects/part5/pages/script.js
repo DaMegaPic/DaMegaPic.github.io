@@ -6,7 +6,7 @@ document.getElementById("toggle-nav").onclick = () => {
 if (window.location.pathname.includes("reviews.html")) {
     const fetchReviews = async () => {
         try {
-            const response = await fetch("/jsons/reviews.json");
+            const response = await fetch("https://damegapic.github.io/jsons/reviews.json");
             const data = await response.json();
             populateReviews(data.reviews);
         }
