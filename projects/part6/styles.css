@@ -1,0 +1,127 @@
+/* General */
+* {
+    margin:0;
+}
+body {
+    padding-top: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#102d4f;
+}
+
+/* Header */
+header {
+    position:fixed;
+    top:0;
+    left:50%;
+    transform: translateX(-50%);
+    width:80%;
+    background-color: white;
+    z-index: 1000;
+    border-radius: 10px;
+}
+#flex-header {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    position:relative;
+    padding:10px 10px;
+    height:120px;
+    gap:20px;
+}
+#header-logo {
+    width:100px;
+    height:100px;
+    margin-right:15px;
+    position:static;
+}
+#centered {
+    text-align: center;
+    flex-grow:1;
+    background:#102d4f;
+    color:white;
+    font-size: 1.5rem;
+    padding:10px;
+}
+hr {
+    border:none;
+    height:2px;
+    background-color: #333;
+}
+#main-nav {
+    display:flex;
+    justify-content: center;
+    margin-top:10px;
+}
+#main-nav ul {
+    display:flex;
+    list-style: none;
+    padding:0;
+    flex-direction: column;
+}
+#main-nav ul li {
+    margin:0 15px;
+    padding:3px 6px;
+}
+#main-nav > li {
+    position:relative;
+}
+#main-nav a {
+    text-decoration: none;
+    color:#333;
+    display:block;
+}
+.highlight-nav {
+    background-color: lightblue;
+    border-bottom:2px solid blue;
+    border-radius: 5px;
+}
+#toggle-nav div {
+    width:25px;
+    height:2px;
+    background-color:blue;
+    margin:6px 0;
+}
+
+.hide-small {
+    display:none !important;
+}
+
+/* Image Cells */
+#flex-nodes {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+#flex-nodes:not(:first-child) {
+    padding-top:50px;
+}
+.node {
+    text-align: center;
+}
+.node img {
+    width: 440px;
+    height:220px;
+}
+h2 {
+    color:white;
+}
+
+/* Larger Resolutions */
+@media only screen and (min-width: 768px) {
+    #flex-nodes {
+        flex-direction: row;
+    }
+    #main-nav ul {
+        flex-direction: row;
+    }
+    .hide-small {
+        display:flex !important;
+    }
+    #toggle-nav {
+        display:none;
+    }
+}
