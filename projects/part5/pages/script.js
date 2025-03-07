@@ -37,6 +37,10 @@ if (window.location.pathname.includes("reviews.html")) {
                     <p class="reviewer-name">${review.reviewer}</p>
                 </div>
             `;
-        })
-    }
+
+            reviewsContainer.appendChild(reviewElement);
+        });
+    };
+
+    document.addEventListener("DOMContentLoaded", fetchReviews);
 }
