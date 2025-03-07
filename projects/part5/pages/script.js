@@ -27,7 +27,7 @@ if (window.location.pathname.includes("reviews.html")) {
                 <div class="review-header">
                     <div class="review-header-text">
                         <h5>${review.title}</h5>
-                        <h5>${"★".repeat(review.rating)}</h5>
+                        <h5>${"&#9733;".repeat(review.rating)}</h5>
                     </div>
                     <img src="${review.image}" alt="Review Image">
                 </div>

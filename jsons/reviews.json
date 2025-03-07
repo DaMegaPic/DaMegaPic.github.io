@@ -2,7 +2,7 @@
     "reviews": [
       {
         "title": "Review Title",
-        "rating": 5,
+        "rating": 3,
         "image": "https://placehold.co/200x100",
         "content": "Json test Success!!!!!",
         "date": "2/9/2025",
