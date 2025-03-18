@@ -29,6 +29,10 @@ a{
     text-align: center;
     flex:1
 }
+a:hover {
+    background-color:burlywood;
+    color:black;
+}
 
 /* Navigation */
 nav a {
@@ -79,5 +83,9 @@ strong{
         border-radius: 5px;
         text-align: center;
         flex-wrap:wrap;
+    }
+    a:hover{
+        background-color: burlywood;
+        color:black;
     }
 }
