@@ -12,7 +12,8 @@ body {
     text-align: center;
 }
 #assignment-blocks,
-#project-blocks{
+#project-blocks,
+#server-blocks{
     display: flex;
     flex-direction: column;
     gap:10px;
@@ -61,7 +62,8 @@ strong{
 /* Larger Resolutions */
 @media (min-width: 900px) {
     #assignment-blocks,
-    #project-blocks{
+    #project-blocks,
+    #server-blocks{
         display: flex;
         flex-direction: row;
         padding: 5px;
