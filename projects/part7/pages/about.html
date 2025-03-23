@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Local Happiness Construction</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <div id="flex-header">
+                <img id="header-logo" src="images/logo.jpg">
+                <h1 id="centered">Local Happiness Construction</h1>
+            </div>
+            <hr>
+            <nav id="main-nav">
+                <div id="toggle-nav">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul id="nav-items" class="hide-small">
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="highlight-nav"><a href="about.html">About Us</a></li>
+                    <li><a href="kitchens.html">Kitchens</a></li>
+                    <li><a href="bathrooms.html">Bathrooms</a></li>
+                    <li><a href="landscaping.html">Landscaping</a></li>
+                    <li><a href="reviews.html">Review Board</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="about-main">
+            <div id="about-block">
+                <div id="top-chunk">
+                    <p>This area is a placeholder for a brief description of the business and the morals it follows. It would describe how prior clients appreciate the work done and why future clients should choose this business </p>
+                    <img src="images/logo.jpg">
+                </div>
+                <div id="bottom-chunk">
+                    <img style="width:150px;height:200px;" src="images/dadheadshot.jpg">
+                    <h4>Founder/Owner: Ken Carey</h4>
+                    <p>Email: ken@localhappiness.net</p>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d211592.96794771892!2d-81.1023736330122!3d34.04027651975652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f8a5697931d1e3%3A0xf32808f4b379fa96!2sColumbia%2C%20SC!5e0!3m2!1sen!2sus!4v1742761876574!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="85ecd7c3-897d-4395-adc3-10d4936e84d9">
+
+                <h3>Work Request Form</h3>
+                <p id="work-request-p">Please use this form to contact us about any potential work you need done, you can attach a description as well as a picture to your name and phone number, we will contact you about it as soon as possible</p>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Name" required />
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <label for="message">Description:</label>
+                <textarea id="message" name="message" rows="6" cols="30" placeholder="Include any major details" required></textarea>
+                <button type="submit">Submit</button>
+                <input type="hidden" name="redirect" value="https://web3forms.com/success"/>
+                <input type="hidden" name="subject" value="Contact from Website"/>
+                <p id="result"></p>
+            </form>
+        </main>
+        <script src="script.js"></script>
+        <script src="form.js"></script>
+    </body>
+</html>
